@@ -13,10 +13,4 @@ inp_file.close()
 
 
 
-inp = [sum(int(food) for food in elf.split("\n"))for elf in inp.split("\n\n")]
-food=0
-for i in range(3):
-    m=max(inp)
-    food+=m
-    inp.remove(m)
-print(food)
+print(sum(sorted([sum(int(food) for food in elf.split("\n"))for elf in inp.split("\n\n")], reverse=True)[:3]))
