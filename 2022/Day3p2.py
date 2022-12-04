@@ -1,3 +1,4 @@
+# Reading Input to inp
 import os
 from datetime import date
 import sys
@@ -10,11 +11,12 @@ if not os.path.isfile(inp_file_name):
 inp_file=open(inp_file_name)
 inp=inp_file.read()
 inp_file.close()
+#End input reading
 
 
 
 prio=0
-score=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+score=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" #Index is value
 inp=inp.split('\n')
 for elves in [inp[3*i:(3*i)+3]for i in range(len(inp)//3)]:
     for item in elves[0]:

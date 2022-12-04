@@ -1,3 +1,4 @@
+# Reading Input to inp
 import os
 from datetime import date
 import sys
@@ -10,7 +11,7 @@ if not os.path.isfile(inp_file_name):
 inp_file=open(inp_file_name)
 inp=inp_file.read()
 inp_file.close()
-
+#End input reading
 
 
 print(inp)
