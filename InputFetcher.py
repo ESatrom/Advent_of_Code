@@ -3,7 +3,7 @@ from datetime import date
 import os
 
 def run(TODAY):
-    COOKIE=open("cookie.txt").readline()
+    COOKIE=open(os.path.dirname(os.path.abspath(__file__))+"\\cookie.txt").readline()
     YEAR=TODAY.year
     DAY=TODAY.day
 
